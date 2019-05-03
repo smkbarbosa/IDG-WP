@@ -431,3 +431,10 @@ $preto: #000;
 	background: none !important;
 	background-color: transparent !important;
 }
+
+/* BREADCRUMB */
+
+#breadcrumb-wrapper .breadcrumb li + li:before { display: none; }
+#breadcrumb-wrapper .breadcrumb a { padding: 0; }
+
+.theme-items-list.repository-level-page.is-fullscreen { position: fixed; }
