@@ -44,10 +44,13 @@
 				$('body').toggleClass('menu-active');
 
 				if ($('body').hasClass('menu-active')) {
+					
 					bodyScrollLock.disableBodyScroll(document.querySelector('.scrollTarget'),{
 						allowTouchMove: el => (el.tagName === 'div')
-  				});
+  					});
 
+				} else {
+					bodyScrollLock.clearAllBodyScrollLocks();
 				}
 			})
 
