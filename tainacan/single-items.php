@@ -18,6 +18,7 @@
 								<article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
 									<?php if ( tainacan_has_document() ) : ?>
 										<div class="box-tainacan-document">
+											<?php echo share_box(); ?>
 											<?php tainacan_the_document(); ?>
 										</div>
 									<?php endif; ?>
