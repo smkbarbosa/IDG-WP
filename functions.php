@@ -106,6 +106,8 @@ function idg_wp_scripts() {
 		wp_enqueue_style( 'idg-wp-style', get_template_directory_uri() . '/assets/stylesheets/dist/bundle.min.css', false, '1.2'  );
 	}
 
+	wp_enqueue_style('material-design-icons-cdn-style', 'https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css', null, microtime());
+
 	if( idg_wp_app_env() === 'development' ){
 		wp_enqueue_script( 'idg-wp-scripts', get_template_directory_uri() . '/assets/js/dist/bundle.js', array('jquery'), '1.2', true );
 	} else {
