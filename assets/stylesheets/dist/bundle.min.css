@@ -7483,7 +7483,7 @@ body {
     background: #000000;
     color: #FFFFFF; }
     body.high-contrast a {
-      color: #FFFFFF; }
+      color: #FFFFFF !important; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900; }
@@ -7536,6 +7536,9 @@ figure.wp-caption {
 
 body.page #main-single {
   background: #FFFFFF; }
+
+body.high-contrast #main-single {
+  background: #000000 !important; }
 
 .entry-content a {
   text-decoration: underline;
@@ -8146,6 +8149,9 @@ body.page #main-single {
   .date-box span {
     color: #666666;
     font-size: 0.9em; }
+
+body.high-contrast .date-box span {
+  color: #FFFFFF !important; }
 
 .alternative-headline {
   font-size: 1.1em;
@@ -9238,6 +9244,10 @@ body.page #main-single {
         top: 50%;
         font-family: 'icomoon'; }
 
+body.high-contrast .texto-copyright .voltar-topo a:after {
+  background: #FFFFFF !important;
+  color: #000000 !important; }
+
 #main-single #content .align {
   max-width: 960px;
   margin: 0 auto; }
@@ -9439,6 +9449,12 @@ body.page #main-single {
     #posts-list li span {
       font-size: 0.85em;
       color: #A6A6A6; }
+
+body.high-contrast #posts-list li {
+  border-color: #FFFFFF !important; }
+  body.high-contrast #posts-list li p,
+  body.high-contrast #posts-list li span {
+    color: #FFFFFF !important; }
 
 #page-info {
   overflow: hidden;
