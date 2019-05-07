@@ -8431,6 +8431,10 @@ body.high-contrast .date-box span {
         .subpages-menu .menu-content ul li a {
           color: #222222; }
 
+body.high-contrast .subpages-menu .menu-content button {
+  color: #000000;
+  background: #FFFFFF; }
+
 .accordion .card {
   border-bottom: 1px solid #dee2e6; }
   .accordion .card p:empty {
@@ -9688,6 +9692,25 @@ body.high-contrast #posts-list li {
     #share-box a.linkedin:before {
       background-position: -242px -59px; }
     #share-box a.linkedin:hover {
+      background: #0073b1; }
+
+body.high-contrast #share-box a {
+  border-color: #000000; }
+  body.high-contrast #share-box a.facebook {
+    background: #FFFFFF; }
+    body.high-contrast #share-box a.facebook:hover {
+      background: #3b5998; }
+  body.high-contrast #share-box a.twitter {
+    background: #FFFFFF; }
+    body.high-contrast #share-box a.twitter:hover {
+      background: #1da1f2; }
+  body.high-contrast #share-box a.g-plus {
+    background: #FFFFFF; }
+    body.high-contrast #share-box a.g-plus:hover {
+      background: #db4437; }
+  body.high-contrast #share-box a.linkedin {
+    background: #FFFFFF; }
+    body.high-contrast #share-box a.linkedin:hover {
       background: #0073b1; }
 
 .icon-acoes-programadas:before {

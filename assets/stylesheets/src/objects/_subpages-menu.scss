@@ -156,8 +156,8 @@
         @include transform(translateY(-100%));
 
         content: "";
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-left: 13px solid transparent;
         border-right: 13px solid transparent;
         border-bottom: 13px solid #efefef;
@@ -192,4 +192,9 @@
       }
     }
   }
+}
+
+body.high-contrast .subpages-menu .menu-content button {
+  color: color(black);
+  background: color(white);
 }
