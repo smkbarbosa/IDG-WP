@@ -37,6 +37,8 @@ body {
 	&.high-contrast {
 		background: color(black);
 		color: color(white);
+
+		a { color: color(white); }
 	}
 }
 
@@ -578,7 +580,7 @@ body.page {
 		}
 
 		&.image-right {
-			flex-direction: row-reverse; 
+			flex-direction: row-reverse;
 
 			.col-image {
 				margin-left: 100px;
