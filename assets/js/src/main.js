@@ -43,15 +43,15 @@
 			$('#menu-toggle').click(function () {
 				$('body').toggleClass('menu-active');
 
-				if ($('body').hasClass('menu-active')) {
-					
-					bodyScrollLock.disableBodyScroll(document.querySelector('.scrollTarget'),{
-						allowTouchMove: el => (el.tagName === 'div')
-  					});
-
-				} else {
-					bodyScrollLock.clearAllBodyScrollLocks();
-				}
+				// if ($('body').hasClass('menu-active')) {
+				//
+				// 	bodyScrollLock.disableBodyScroll(document.querySelector('.scrollTarget'),{
+				// 		allowTouchMove: el => (el.tagName === 'div')
+  			// 		});
+				//
+				// } else {
+				// 	bodyScrollLock.clearAllBodyScrollLocks();
+				// }
 			})
 
 			$('#menu-wrapper, #menu-toggle').click(function(event){
