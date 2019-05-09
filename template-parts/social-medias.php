@@ -1,20 +1,15 @@
 <ul class="social-medias">
-  <li class="twitter">
-    <a href="https://twitter.com/CulturaGovBR" target="_blank">Twitter</a>
-  </li>
-  <li class="youtube">
-    <a href="http://youtube.com/user/ministeriodacultura" target="_blank">Youtube</a>
-  </li>
-  <li class="facebook">
-    <a href="https://www.facebook.com/SecretariaEspecialDaCultura/" target="_blank">Facebook</a>
-  </li>
-  <li class="flickr">
-    <a href="http://flickr.com/photos/ministeriodacultura/" target="_blank">Flickr</a>
-  </li>
-  <li class="instagram">
-    <a href="http://instagram.com/culturagovbr" target="_blank">Instagram</a>
-  </li>
-  <li class="soundcloud">
-    <a href="https://soundcloud.com/mincidadania" target="_blank">Soundcloud</a>
-  </li>
+  
+  <?php $available_social_networks = idg_wp_get_available_social_networks(); ?>
+  
+  <?php foreach ($available_social_networks as $slug => $social): ?>
+	  
+	  <?php if ($item = idg_wp_get_option('social_'.$slug.'_profile')): ?>
+		  <li class="<?php echo $slug; ?>">
+		    <a href="<?php echo $item; ?>" target="_blank"><?php echo $social['name']; ?></a>
+		  </li>
+	  <?php endif; ?>
+	  
+  <?php endforeach; ?>
+  
 </ul>
