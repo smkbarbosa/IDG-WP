@@ -24,7 +24,7 @@ get_header();
 		<section id="news" class="pb-5 pt-5 bg-grey-2">
 			<div class="container">
 				<div class="row">
-					<div class="overflow-wrapper">
+					<div class="overflow-wrapper justify-content-md-center">
 
 						<?php
 						$args = array(
@@ -38,7 +38,7 @@ get_header();
 
 							<?php while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
 
-							
+
 								<div class="col-lg-4 mb-5">
 									<?php
 									if ( has_post_thumbnail() ) {
