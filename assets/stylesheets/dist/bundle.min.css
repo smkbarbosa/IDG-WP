@@ -9637,10 +9637,11 @@ body.page #main-single {
   border-bottom: 1px solid #f1f1f1;
   padding: 45px 0;
   top: 100%;
-  height: max-content;
   z-index: 100;
   visibility: hidden;
-  opacity: 0; }
+  opacity: 0;
+  height: 0;
+  overflow: hidden; }
   @media (min-width: 1150px) {
     #menu-wrapper {
       transition: visibility 0s linear 0.25s, opacity 0.25s;

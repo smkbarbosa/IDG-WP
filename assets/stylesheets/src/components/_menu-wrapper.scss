@@ -11,10 +11,11 @@
 	border-bottom: 1px solid rgb(241, 241, 241);
 	padding: 45px 0;
 	top: 100%;
-	height: max-content;
 	z-index: 100;
 	visibility: hidden;
 	opacity: 0;
+	height: 0;
+	overflow: hidden;
 
 	@include media("≥desktop") {
 		@include transition(visibility 0s linear .25s, opacity .25s);
