@@ -1,7 +1,7 @@
 <?php
-function share_box($content) {
+function share_box($content='',$forced=false) {
 
-	if( !is_single() ){
+	if( !is_single() && !$forced ){
 		return $content;
 	}
 

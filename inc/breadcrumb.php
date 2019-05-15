@@ -38,22 +38,29 @@ function the_breadcrumb() {
 
 		} else if ( is_archive() && is_tax() && !is_category() && !is_tag() ) {
 
+			// Uma taxonomia pode ser usada por mais de um post type. Logo isso não faz sentido
+			// 
 			// If post is a custom post type
-			$post_type = get_post_type();
+			// $post_type = get_post_type();
+			// 
+			// // If it is a custom post type display name and link
+			// if($post_type != 'post') {
+			// 
+			// 	$post_type_object = get_post_type_object($post_type);
+			// 	$post_type_archive = get_post_type_archive_link($post_type);
+			// 
+			// 	echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive . '" title="' . $post_type_object->labels->name . '">' . $post_type_object->labels->name . '</a></li>';
+			// 	echo '<li class="separator"> ' . $separator . ' </li>';
+			// 
+			// }
 
-			// If it is a custom post type display name and link
-			if($post_type != 'post') {
-
-				$post_type_object = get_post_type_object($post_type);
-				$post_type_archive = get_post_type_archive_link($post_type);
-
-				echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive . '" title="' . $post_type_object->labels->name . '">' . $post_type_object->labels->name . '</a></li>';
-				echo '<li class="separator"> ' . $separator . ' </li>';
-
-			}
-
-			$custom_tax_name = get_queried_object()->name;
-			echo '<li class="item-current item-archive"><strong class="bread-current bread-archive">' . $custom_tax_name . '</strong></li>';
+			$custom_term_name = get_queried_object()->name;
+			$custom_tax = get_taxonomy(get_queried_object()->taxonomy);
+			$custom_tax_name = $custom_tax->label;
+			
+			echo '<li class="item-cat item-custom-tax-' . $custom_tax->name . '">' . $custom_tax_name . '</li>';
+			echo '<li class="separator">&gt;</li>';
+			echo '<li class="item-current item-archive"><strong class="bread-current bread-archive">' . $custom_term_name . '</strong></li>';
 
 		} else if ( is_single() ) {
 
