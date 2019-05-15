@@ -25,7 +25,7 @@
     }
 
     p {
-      font-size: 1.15em; 
+      font-size: 1.15em;
       color: color(dark);
       margin: 0 0 20px;
     }
@@ -33,6 +33,16 @@
     span {
       font-size: 0.85em;
       color: color(silver);
+    }
+  }
+}
+body.high-contrast {
+  #posts-list li {
+    border-color: color(white) !important;
+
+    p,
+    span {
+      color: color(white) !important;
     }
   }
 }

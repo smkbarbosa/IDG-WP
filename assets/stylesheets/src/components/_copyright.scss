@@ -80,3 +80,8 @@
     }
   }
 }
+
+body.high-contrast .texto-copyright .voltar-topo a:after {
+  background: color(white) !important;
+  color: color(black) !important;
+}

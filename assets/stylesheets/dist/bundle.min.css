@@ -3110,6 +3110,10 @@ input[type="button"].btn-block {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
 
+body.high-contrast .card {
+  background: #000000 !important;
+  border-color: #FFFFFF !important; }
+
 .card-body {
   flex: 1 1 auto;
   padding: 1.25rem; }
@@ -7490,6 +7494,8 @@ body {
   body.high-contrast {
     background: #000000;
     color: #FFFFFF; }
+    body.high-contrast a {
+      color: #FFFFFF !important; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900; }
@@ -7638,9 +7644,14 @@ figure.wp-caption {
 body.page #main-single {
   background: #FFFFFF; }
 
+<<<<<<< HEAD
 @media (min-width: 320px) and (max-width: 1150px) {
   #main-single {
     overflow: hidden; } }
+=======
+body.high-contrast #main-single {
+  background: #000000 !important; }
+>>>>>>> 7a8a7f35666b75ff2614c0e1d0edf5044c2dd0f0
 
 .entry-content a {
   text-decoration: underline;
@@ -8359,6 +8370,9 @@ body.page #main-single {
     color: #666666;
     font-size: 0.9em; }
 
+body.high-contrast .date-box span {
+  color: #FFFFFF !important; }
+
 .alternative-headline {
   font-size: 1.1em;
   font-weight: 700;
@@ -8709,6 +8723,10 @@ body.page #main-single {
           margin-top: 0; }
         .subpages-menu .menu-content ul li a {
           color: #222222; }
+
+body.high-contrast .subpages-menu .menu-content button {
+  color: #000000;
+  background: #FFFFFF; }
 
 .accordion .card {
   border-bottom: 1px solid #dee2e6; }
@@ -10057,9 +10075,15 @@ body.page #main-single {
         top: 50%;
         font-family: 'icomoon'; }
 
+<<<<<<< HEAD
 @media (min-width: 320px) and (max-width: 1150px) {
   #main-single > .container > .row {
     overflow: hidden; } }
+=======
+body.high-contrast .texto-copyright .voltar-topo a:after {
+  background: #FFFFFF !important;
+  color: #000000 !important; }
+>>>>>>> 7a8a7f35666b75ff2614c0e1d0edf5044c2dd0f0
 
 #main-single #content .align {
   max-width: 960px;
@@ -10370,6 +10394,12 @@ body.page #main-single {
       font-size: 0.85em;
       color: #A6A6A6; }
 
+body.high-contrast #posts-list li {
+  border-color: #FFFFFF !important; }
+  body.high-contrast #posts-list li p,
+  body.high-contrast #posts-list li span {
+    color: #FFFFFF !important; }
+
 #page-info {
   overflow: hidden;
   background: #2969BD;
@@ -10625,6 +10655,25 @@ body.page #main-single {
     #share-box a.linkedin:before {
       background-position: -242px -59px; }
     #share-box a.linkedin:hover {
+      background: #0073b1; }
+
+body.high-contrast #share-box a {
+  border-color: #000000; }
+  body.high-contrast #share-box a.facebook {
+    background: #FFFFFF; }
+    body.high-contrast #share-box a.facebook:hover {
+      background: #3b5998; }
+  body.high-contrast #share-box a.twitter {
+    background: #FFFFFF; }
+    body.high-contrast #share-box a.twitter:hover {
+      background: #1da1f2; }
+  body.high-contrast #share-box a.g-plus {
+    background: #FFFFFF; }
+    body.high-contrast #share-box a.g-plus:hover {
+      background: #db4437; }
+  body.high-contrast #share-box a.linkedin {
+    background: #FFFFFF; }
+    body.high-contrast #share-box a.linkedin:hover {
       background: #0073b1; }
 
 .icon-acoes-programadas:before {
