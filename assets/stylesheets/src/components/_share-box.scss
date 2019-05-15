@@ -77,3 +77,33 @@
 		}
 	}
 }
+
+body.high-contrast #share-box {
+	a {
+		border-color: color(black);
+
+		&.facebook {
+			background: color(white);
+
+			&:hover { background: #3b5998; }
+		}
+
+		&.twitter {
+			background: color(white);
+
+			&:hover { background: #1da1f2; }
+		}
+
+		&.g-plus {
+			background: color(white);
+
+			&:hover { background: #db4437; }
+		}
+
+		&.linkedin {
+			background: color(white);
+
+			&:hover { background: #0073b1; }
+		}
+	}
+}

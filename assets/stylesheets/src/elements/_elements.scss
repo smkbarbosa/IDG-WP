@@ -37,6 +37,8 @@ body {
 	&.high-contrast {
 		background: color(black);
 		color: color(white);
+
+		a { color: color(white) !important; }
 	}
 }
 
@@ -277,6 +279,7 @@ body.page {
 		background: color(white);
 	}
 }
+body.high-contrast #main-single { background: color(black) !important; }
 
 #main-single {
 	@include media("≥phone", "≤desktop") {
