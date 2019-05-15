@@ -423,3 +423,36 @@ function idg_wp_get_option ( $option ) {
 	$option_key = $theme_key . '_theme_options';
 	return get_option($option_key . $option);
 }
+
+function idg_wp_get_available_social_networks() {
+	
+	return apply_filters('idg_wp_get_available_social_networks', [
+		'twitter' => [
+			'name' => 'Twitter',
+			'slug' => 'twitter'
+		],
+		'youtube' => [
+			'name' => 'Youtube',
+			'slug' => 'youtube'
+		],
+		'facebook' => [
+			'name' => 'Facebook',
+			'slug' => 'facebook'
+		],
+		'flickr' => [
+			'name' => 'Flickr',
+			'slug' => 'flickr'
+		],
+		'instagram' => [
+			'name' => 'Instagram',
+			'slug' => 'instagram'
+		],
+		'soundcloud' => [
+			'name' => 'Soundcloud',
+			'slug' => 'soundcloud'
+		]
+	]);
+	
+}
+
+
