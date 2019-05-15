@@ -19,8 +19,6 @@ $children = get_pages( array( 'child_of' => $post->ID ) );?>
   $child_query = new WP_Query( $args );
 ?>
 
-<?php wp_reset_postdata(); ?>
-
 <?php if ($child_query->have_posts()) : ?>
 
   <div class="menu-wrapper subpages-menu">
@@ -49,3 +47,5 @@ $children = get_pages( array( 'child_of' => $post->ID ) );?>
   </div>
 
 <?php endif; ?>
+
+<?php wp_reset_postdata(); ?>
