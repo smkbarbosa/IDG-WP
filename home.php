@@ -143,87 +143,37 @@ get_header();
 			</div>
 		</section>
 
-		<section id="services" class="mt-5 mb-5 pt-4">
-			<div class="container">
-				<div class="row">
-					<div class="overflow-wrapper">
-						<?php
-						if ( is_active_sidebar( 'services-widgets-area' ) ) :
-							dynamic_sidebar( 'services-widgets-area' );
-						endif;
-						?>
+		<?php if ( !idg_wp_get_option('_home_widgets_sections_disable') ):  ?>
+
+			<?php
+			$idg_wp_widgets_areas = get_theme_mod( 'idg_wp_widgets_areas' );
+			$sections = idg_wp_get_option('_home_widgets_sections');
+			$sections = explode( ',', $sections );
+			
+			foreach ($sections as $section) : ?>
+			<section id="<?php echo $section; ?>" class="<?php echo empty( $idg_wp_widgets_areas['areas'][$section]['section_class'] ) ? 'mt-5 mb-5 pt-4' : $idg_wp_widgets_areas['areas'][$section]['section_class']; ?>">
+				<div class="container">
+					<div class="row">
+						
+						<?php if( $idg_wp_widgets_areas['areas'][$section]['section_title'] ): ?>
+							<div class="col-lg-12">
+								<h2 class="section-title mb-5 text-center"><?php echo $idg_wp_widgets_areas['areas'][$section]['section_title']; ?></h2>
+							</div>
+						<?php endif; ?>
+						
+						<div class="overflow-wrapper">
+							<?php
+							if ( is_active_sidebar( $section ) ) :
+								dynamic_sidebar( $section );
+							endif;
+							?>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section id="agenda" class="pt-5 pb-5 mb-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<?php echo do_shortcode( '[gs-agenda event-cats="agenda-cultural, agenda-do-ministro, agenda-de-cursos"]' ); ?>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="secretarias" class="pt-5 pb-5 mb-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h2 class="section-title mb-5 text-center">Conheça a Secretaria</h2>
-					</div>
-
-					<div class="overflow-wrapper">
-						<?php
-						if ( is_active_sidebar( 'meet-the-ministry-widgets-area' ) ) :
-							dynamic_sidebar( 'meet-the-ministry-widgets-area' );
-						endif;
-						?>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="section-content" class="pt-5 pb-5">
-			<div class="container">
-				<div class="row">
-					<div class="overflow-wrapper">
-						<?php
-						if ( is_active_sidebar( 'content-widgets-area' ) ) :
-							dynamic_sidebar( 'content-widgets-area' );
-						endif;
-						?>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="participacao-social" class="mt-5 mb-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h2 class="section-title mb-5 text-center">Participação Social</h2>
-					</div>
-
-					<div class="overflow-wrapper">
-						<?php
-						if ( is_active_sidebar( 'social-participation-widgets-area' ) ) :
-							dynamic_sidebar( 'social-participation-widgets-area' );
-						endif;
-						?>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="multimidia" class="mt-5">
-			<div class="container">
-				<div class="row">
-					<?php get_template_part('template-parts/multimedia-block'); ?>
-				</div>
-			</div>
-		</section>
+			</section>
+		<?php endforeach; ?>
+		
+	<?php endif; ?>
 
 	</main>
 
