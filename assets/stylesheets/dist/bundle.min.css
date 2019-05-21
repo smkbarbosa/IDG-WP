@@ -11523,6 +11523,9 @@ p img.alignright, p img.alignleft {
           border-color: #06ACFF;
           color: #06ACFF; } }
 
+.wp-block-quote {
+  margin: 20px 0; }
+
 #com-via-whatsapp-form {
   border-radius: 0.25rem;
   -webkit-border-radius: 0.25rem;
