@@ -24,12 +24,12 @@ Assim que tivermos uma primeira versão, faremos uma pequena página com link pa
 
 ## Exemplos de telas
 
-![exemplo](/screenshots/screenshot-home.png)
-![exemplo](/screenshots/screenshot-noticias.png)
-![exemplo](/screenshots/screenshot-agenda.png)
-![exemplo](/screenshots/screenshot-publicacoes.png)
-![exemplo](/screenshots/screenshot-responsivo-1.png)
-![exemplo](/screenshots/screenshot-responsivo-2.png)
+![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-home.png)
+![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-noticias.png)
+![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-agenda.png)
+![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-publicacoes.png)
+![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-responsivo-1.png)
+![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-responsivo-2.png)
 
 ## Instalando e usando
 
