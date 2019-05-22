@@ -24,12 +24,15 @@ Assim que tivermos uma primeira versão, faremos uma pequena página com link pa
 
 ## Exemplos de telas
 
-![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-home.png)
-![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-noticias.png)
-![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-agenda.png)
-![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-publicacoes.png)
-![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-responsivo-1.png)
-![exemplo](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-responsivo-2.png)
+![Exemplo da página principal](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-home.png)
+![Exemplo da página de notícias](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-noticias.png)
+![Exemplo da página de agenda de autoridades](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-agenda.png)
+![Exemplo da página de publicações](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-publicacoes.png)
+
+### Telas estreitas (responsividade)
+
+<img src="https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-responsivo-1.png" alt="Exemplo da página principal em tela estreita" width="300"/>
+<img src="https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-responsivo-2.png" alt="Exemplo da página de notícias em tela estreita" width="300"/>
 
 ## Instalando e usando
 
