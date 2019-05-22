@@ -22,6 +22,15 @@ Assim que tivermos uma primeira versão, faremos uma pequena página com link pa
 * Menus personalizáveis
 * Rodapé personalizável
 
+## Exemplos de telas
+
+![exemplo](/screenshots/screenshot-home.png)
+![exemplo](/screenshots/screenshot-noticias.png)
+![exemplo](/screenshots/screenshot-agenda.png)
+![exemplo](/screenshots/screenshot-publicacoes.png)
+![exemplo](/screenshots/screenshot-responsivo-1.png)
+![exemplo](/screenshots/screenshot-responsivo-2.png)
+
 ## Instalando e usando
 
 Para utilizar este tema basta fazer o download deste repositório e colocar seu conteúdo dentro da pasta `wp-content/themes` da sua instalação WordPress.
