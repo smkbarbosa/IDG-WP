@@ -1,46 +1,57 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+# Tema Identidade de Governo para WordPress
 
-_s
-===
+IDG-WP é um tema para [WordPress](https://wordpress.org) que implementa a [Identidade Padrão de Comunicação Digital](http://www.portalpadrao.gov.br/) do governo federal.
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+A proposta deste projeto é oferecer para desenvolvedores um tema completo e genérico para que qualquer órgão da Administração Pública Federal possa utilizá-lo para construir um site ou portal.
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+Este projeto nasceu como tema para o site da [Secretaria Especial de Cultura](http://cultura.gov.br) do Ministerio da Cidadania.
 
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A helpful 404 template.
-* A custom header implementation in `inc/custom-header.php` just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-Note: `.no-sidebar` styles are not automatically loaded.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+## Estágio atual do projeto 
 
-Getting Started
----------------
+No momento estamos removendo algumas partes que estão com funcionalidades específicas para a Secretaria de Cultura e generalizando as configurações para que ele possa servir a qualquer órgão.
 
-If you want to keep it simple, head over to https://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+Assim que tivermos uma primeira versão, faremos uma pequena página com link para Download e começaremos a versionar o projeto.
 
-If you want to set things up manually, download `_s` from GitHub. The first thing you want to do is copy the `_s` directory and change the name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a five-step find and replace on the name in all the templates.
+## Funcionalidades 
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain.
-2. Search for `_s_` to capture all the function names.
-3. Search for `Text Domain: _s` in `style.css`.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
-5. Search for `_s-` to capture prefixed handles.
+* Cores personalizáveis
+* Carrossel de destaques
+* Página inicial modular
+* Responsivo
+* Agenda de autoridades/eventos
+* Menus personalizáveis
+* Rodapé personalizável
 
-OR
+## Instalando e usando
 
-1. Search for: `'_s'` and replace with: `'megatherium-is-awesome'`
-2. Search for: `_s_` and replace with: `megatherium_is_awesome_`
-3. Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium-is-awesome` in `style.css`.
-4. Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium_is_Awesome</code>
-5. Search for: `_s-` and replace with: `megatherium-is-awesome-`
+Para utilizar este tema basta fazer o download deste repositório e colocar seu conteúdo dentro da pasta `wp-content/themes` da sua instalação WordPress.
 
-Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
+## Desenvolvendo
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+Para montar um ambiente de desenvolvimento é necessário instalar o `npm` e o `gulp`.
 
-Good luck!
+Uma vez instalados:
+
+Entre na pasta do tema e e instale as dependências:
+
+```
+npm install
+```
+
+Rode o gulp
+
+```
+gulp
+```
+
+É preciso rodar este comando sempre que for feita uma alteração em uma folha de estilo ou arquivo javascript para gerar os arquivos compilados. 
+
+**Importante:** Para as folhas de estilo, utilizamos [SASS](https://sass-lang.com/). Nunca edite os arquivos compliados `.css`, edite aspenas os fontes em `assets/stylesheets/src`. Os arquivos `.js` seguem a mesma lógica e devem ser editados em `assets/js/src`.
+
+## Sobre o projeto
+
+Este projeto é desenvolvido atualmente pela equipe responsável pelo portal da [Secretaria Especial de Cultura](http://cultura.gov.br) do Ministério da Cidadania e bolsistas do projeto [Tainacan](https://tainacan.org), parceria entre o Instituto Brasileiro de Museus e a UFG.
+
+Este projeto, ao menos por enquanto, **NÃO** é uma iniciativa de nenhuma das instituições citadas e estas não possuem qualquer responsabilidade sobre ele. 
+
+Este tema é uma iniciativa dos técnicos envolvidos no desenvolvimento com a intenção de somar esforços e otimizar recursos para que outros órgãos possam se beneficiar e contribuir com este trabalho. 
