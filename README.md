@@ -22,6 +22,18 @@ Assim que tivermos uma primeira versão, faremos uma pequena página com link pa
 * Menus personalizáveis
 * Rodapé personalizável
 
+## Exemplos de telas
+
+![Exemplo da página principal](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-home.png)
+![Exemplo da página de notícias](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-noticias.png)
+![Exemplo da página de agenda de autoridades](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-agenda.png)
+![Exemplo da página de publicações](https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-publicacoes.png)
+
+### Telas estreitas (responsividade)
+
+<img src="https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-responsivo-1.png" alt="Exemplo da página principal em tela estreita" width="300"/>
+<img src="https://github.com/nitaibezerra/IDG-WP/raw/45381fd1f68af9aabd088b58eb655ebf17285d9c/screenshots/screenshot-responsivo-2.png" alt="Exemplo da página de notícias em tela estreita" width="300"/>
+
 ## Instalando e usando
 
 Para utilizar este tema basta fazer o download deste repositório e colocar seu conteúdo dentro da pasta `wp-content/themes` da sua instalação WordPress.
