@@ -288,6 +288,9 @@
 
 		idgTextImageBoxWidgets: function () {
 
+			if(typeof tinymce == 'undefined')
+				return;
+
 			var $idgText = $('.idg-text');
 			tinymce.init({
 				selector: '.idg-rich-text',
