@@ -7644,14 +7644,12 @@ figure.wp-caption {
 body.page #main-single {
   background: #FFFFFF; }
 
-<<<<<<< HEAD
+body.high-contrast #main-single {
+  background: #000000 !important; }
+
 @media (min-width: 320px) and (max-width: 1150px) {
   #main-single {
     overflow: hidden; } }
-=======
-body.high-contrast #main-single {
-  background: #000000 !important; }
->>>>>>> 7a8a7f35666b75ff2614c0e1d0edf5044c2dd0f0
 
 .entry-content a {
   text-decoration: underline;
@@ -10076,15 +10074,13 @@ body.high-contrast .subpages-menu .menu-content button {
         top: 50%;
         font-family: 'icomoon'; }
 
-<<<<<<< HEAD
-@media (min-width: 320px) and (max-width: 1150px) {
-  #main-single > .container > .row {
-    overflow: hidden; } }
-=======
 body.high-contrast .texto-copyright .voltar-topo a:after {
   background: #FFFFFF !important;
   color: #000000 !important; }
->>>>>>> 7a8a7f35666b75ff2614c0e1d0edf5044c2dd0f0
+
+@media (min-width: 320px) and (max-width: 1150px) {
+  #main-single > .container > .row {
+    overflow: hidden; } }
 
 #main-single #content .align {
   max-width: 960px;
