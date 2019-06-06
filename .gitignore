@@ -1,7 +1,0 @@
-.DS_Store
-.idea
-.htaccess
-node_modules/
-wp-config.php
-wp-content/uploads
-wp-content/debug.log
