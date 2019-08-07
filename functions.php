@@ -115,7 +115,7 @@ function idg_wp_scripts() {
 	} else {
 		wp_enqueue_script( 'idg-wp-scripts', get_template_directory_uri() . '/assets/js/dist/bundle.min.js', array('jquery'), '1.2', true );
 	}
-	wp_enqueue_script( 'barra-brasil-script', 'http://barra.brasil.gov.br/barra_2.0.js', false, false, true );
+	wp_enqueue_script( 'barra-brasil-script', '//barra.brasil.gov.br/barra_2.0.js', false, false, true );
 
 	wp_enqueue_script('slick-js', get_template_directory_uri() . '/assets/js/src/vendor/slick.min.js', null, microtime(), true);
 
